@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, h2{
+    font-size: 40px;
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    color: rgb(79, 166, 241);
+    margin: 40px;
+}
+body{
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(34,34,176,1) 35%, rgba(161,239,255,1) 100%);
+}
+p{
+    color: aliceblue;
+}
+.textoPrincipal{
+    margin: 20px;
+}
+.padre{  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 2fr 0.4fr;
+    grid-template-areas:
+      "header header header"
+      "main main main"
+      "footer footer footer";
+}
+/* HEADER   */
+header{ 
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+}
+/* MAIN */
+main{ 
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+}
+/* MAIN INDEX */
+.carousel-inner{
+    margin: 40px;
+    width: 50%;
+
+    
+}
+/* MAIN SERVICIOS */
+.servicios{
+    display: flex;
+    align-items: center;
+}
+.streamEnVivo{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.textoYvideo1{
+    display: flex;
+    align-items: center;
+}
+.creacionDeVideos{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.bloque p{
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 25px;
+}
+.textoYvideo2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.bloque{
+    display: flex;
+    flex-direction: column;
+}
+/* MAIN EQUIPOS */
+.equipos{
+    display: flex;
+    flex-direction: column;
+}
+.equipos img{
+    width: 75px;
+    border: 1px transparent ;
+}
+.izquierda {
+    display: flex;
+    align-items: center;
+    border: 3px solid black;
+    margin: 20px;
+}
+.derecha{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    border: 3px solid black;
+    margin: 20px;
+}
+.equipos div p{
+    font-size: 20px;
+    margin: 5px;
+}
+/* MAIN INFO */
+.info{
+    display: flex;
+    align-items: center;
+    margin: 150px;
+}
+/* MAIN NOSOTROS */
+.nosotros{
+    display: flex;
+    align-items: center;
+}
+.imgPersonal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgPersonal img{
+    width: 300px;
+}
+.nosotros p{
+    margin: 150px 150px;
+}
+/* MAIN CONTACTO */
+.contacto{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contacto img{
+    width: 521px;
+    height: 300px;
+    display: flex;
+}
+.formulario{
+    display: flex;
+    align-items: flex-end;
+    color: aliceblue;
+}
+.datosYmapa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 50px;
+}
+.datos{
+    display: flex;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    padding: 10px;
+    line-height: 50px;
+    margin: 100px 0px 100px 0px;
+} 
+.datos ul{
+    list-style: none;
+}
+/* FOOTER */
+footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sponsors{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+}
+.sponsors{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.derechos{
+    margin-left: 40px;
+}
+.imgFooter img{
+    width: 75px;
+}
+.imgFooter{
+    display: flex;
+    margin: 15px ;
+    justify-content: left;
+}
+@media screen and (max-width: 1200px){
+    /* MAIN SERVICIOS */
+    .servicios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .textoYvideo1, .textoYvideo2{
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 550px){
+    /* MAIN INDEX */
+    .carousel-inner{
+        width: 300px;
+    }
+    /* MAIN SERVICIOS */
+    .textoYvideo1, .textoYvideo2{
+        flex-direction: column;
+    }
+    .streamEnVivo, .creacionDeVideos{
+        align-items: center;
+    }
+    /* FOOTER */
+    footer{
+        flex-direction: column;    
+        justify-content: center; 
+    }
+    .derechos{
+        text-align: center;
+         margin-left: 0px; 
+    }
+    .sponsors{
+        text-align: center;
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+    .imgFooter{
+        justify-content: center;
+    } 
+}
