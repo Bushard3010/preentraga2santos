@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Patua+One&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/estilo.css">
     <title>Contacto</title>
 </head>
@@ -49,7 +50,7 @@
                 <img src="../fotos/rll.png" alt="Logo Rll">
                 <div class="formulario">
                     <div>
-                        <P>TE CONTACTAMOS.</P>
+                        <p>TE CONTACTAMOS.</p>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Mail de contacto</label>
                             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
@@ -74,7 +75,7 @@
                         </ul>                
                     </div>
                     <div class="mapa">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8465587970295!2d-58.37649848423674!3d-34.60804136523511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad3010fb7f5%3A0x3cd0a267ffa64cf3!2sRivadavia%20550%2C%20C1002AAQ%20CABA!5e0!3m2!1ses-419!2sar!4v1661888647801!5m2!1ses-419!2sar" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8465587970295!2d-58.37649848423674!3d-34.60804136523511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccad3010fb7f5%3A0x3cd0a267ffa64cf3!2sRivadavia%20550%2C%20C1002AAQ%20CABA!5e0!3m2!1ses-419!2sar!4v1661888647801!5m2!1ses-419!2sar" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </section>        
@@ -82,6 +83,13 @@
         </main>
         <footer>
             <h3 class="derechos">TODOS LOS DERECHOS RESERVADOS</h3>
+            <div class="redes" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
+            <a href="http://www.intagram.com/rllesports" target="_blank" ><img src="../fotos/iglogo.png"   alt="logoIG"></a>   
+            <a href="http://www.facebook.com/rllesports" target="_blank" ><img src="../fotos/facelogo.png" alt="logoFace"></a>
+            <a href="http://www.twitter.com/rllesports" target="_blank" ><img src="../fotos/twlogo.png" alt="logoTW"> </a>
+            </div>
             <section class="sponsors">
                 <h3>SPONSORS</h3>
                 <div class="imgFooter"> 
@@ -93,5 +101,10 @@
         </footer>
       </div>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script> AOS.init({
+        easing: 'ease-out-back',duration: 2000 
+       })
+     </script>
 </body>
 </html>
