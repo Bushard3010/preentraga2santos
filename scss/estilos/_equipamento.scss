@@ -1,0 +1,24 @@
+/* MAIN EQUIPOS */
+.equipos{
+    @include flex(column, none, none);
+}
+
+.equipos img{
+    width: 200px;
+    margin:20px;
+    border: 1px transparent ;
+}
+.izquierda {
+    @include flex(none, center, none);
+    border: 3px solid black;
+    margin: 20px;
+}
+.derecha{
+    @include flex(row-reverse, center, none);
+    border: 3px solid black;
+    margin: 20px;
+}
+.equipos div p{
+    font-size: 20px;
+    margin: 20px;
+}

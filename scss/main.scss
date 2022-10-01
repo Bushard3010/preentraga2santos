@@ -1,0 +1,19 @@
+.padre{  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 2fr 0.4fr;
+    grid-template-areas:
+      "header header header"
+      "main main main"
+      "footer footer footer";
+}
+
+@import "./variables/variables";
+@import "./estilos/estiloComun";
+@import "./estilos/index";
+@import "./estilos/contacto";
+@import "./estilos/equipamento";
+@import "./estilos/info";
+@import "./estilos/nosotros";
+@import "./estilos/servicios";
+@import "./estilos/madiaQ";

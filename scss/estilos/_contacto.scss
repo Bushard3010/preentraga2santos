@@ -1,0 +1,38 @@
+/* MAIN CONTACTO */
+.contacto{
+    @include flex(none, center, space-between);
+
+    img{
+        width: 521px;
+        height: 300px;
+        display: flex;
+    }
+
+    .formulario{
+        @include flex(none, flex-end, none);
+        color: aliceblue;
+    }
+    
+    .datosYmapa{
+        @include flex(column, center, none);
+        margin-right: 20px;
+
+        .datos{
+            display: flex;
+            color: aliceblue;
+            border: 1px solid aliceblue;
+            padding: 10px;
+            line-height: 50px;
+            margin: 100px 0px 100px 0px;
+
+            ul{
+                list-style: none;
+            }
+        } 
+    }
+}
+
+
+
+
+

@@ -1,0 +1,58 @@
+/* MAIN SERVICIOS */
+.servicios{
+    @include flex(none, center, none);
+
+    .bloque{
+        @include flex(column, none, none);
+
+        .streamEnVivo{
+                @include flex(column, flex-start, none);
+
+            .textoYvideo1{
+                @include flex(none, center, none);
+
+                iframe{
+                    width: 426px;
+                }
+
+                p{
+                    font-size: 20px;
+                    line-height: 1.5;
+                    margin: 25px;
+                }
+            }
+        }
+        .creacionDeVideos{
+                @include flex(column, flex-start, none);    
+
+            .textoYvideo2{
+                @include flex(none, center, none);
+                margin-bottom: 10px;
+
+                iframe{
+                    width: 426px;
+                }     
+
+                p{
+                    font-size: 20px;
+                    line-height: 1.5;
+                    margin: 25px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+.bloque p{
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 25px;
+}
+
+
+
+

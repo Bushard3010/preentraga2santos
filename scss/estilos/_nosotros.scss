@@ -1,0 +1,16 @@
+/* MAIN NOSOTROS */
+.nosotros{
+    @include flex(none, center, none);
+    
+    img{
+        width: 300px;
+    }
+    
+    .imgPersonal{
+        @include flex(column, center, none);
+
+        p{
+            margin: 50px 50px 0px 50px;
+        } 
+    }
+}
