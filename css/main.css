@@ -64,7 +64,8 @@ footer {
         width: 75px; }
 
 .textoPrincipal {
-  margin: 20px; }
+  text-align: center;
+  margin: 50px; }
 
 /* MAIN CONTACTO */
 .contacto {
@@ -130,15 +131,6 @@ footer {
   font-size: 20px;
   margin: 20px; }
 
-.info {
-  display: flex;
-  flex-direction: none;
-  align-items: center;
-  justify-content: none;
-  margin: 150px; }
-  .info p {
-    margin-left: 15px; }
-
 /* MAIN NOSOTROS */
 .nosotros {
   display: flex;
@@ -146,7 +138,8 @@ footer {
   align-items: center;
   justify-content: none; }
   .nosotros img {
-    width: 300px; }
+    width: 600px;
+    border-radius: 20px; }
   .nosotros .imgPersonal {
     display: flex;
     flex-direction: column;
@@ -232,15 +225,7 @@ footer {
     .nosotros .imgPersonal {
       margin-top: 50px; }
     .nosotros p {
-      margin: 50px 100px 0px 100px; }
-  /* MAIN INFO */
-  .info {
-    flex-direction: column;
-    margin: 50px; }
-    .info p {
-      margin-top: 40px; }
-    .info img {
-      width: 75%; } }
+      margin: 50px 100px 0px 100px; } }
 
 @media screen and (max-width: 768px) {
   /* MAIN INDEX */
@@ -307,10 +292,4 @@ footer {
     width: 60%;
     margin-left: 0px; }
     .servicios .bloque .creacionDeVideos .textoYvideo2 iframe {
-      width: 300px; }
-  /* MAIN INFO */
-  .info {
-    margin: 20px; }
-  /* MAIN NOSOTROS */
-  .nosotros .imgPersonal p {
-    margin: 50px 20px 0px 20px; } }
+      width: 300px; } }

@@ -4,3 +4,9 @@
     align-items: $aling;
     justify-content: $justify;
 }
+// MAPEO DE COLORES
+$colores: (
+    "colorParrafo": aliceblue,
+    "colorTitulos": rgb(79, 166, 241),
+    "colorFondo": linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(34,34,176,1) 35%, rgba(161,239,255,1) 100%),
+)

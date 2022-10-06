@@ -3,19 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 h1, h2{
     font-size: 40px;
     font-family: 'Dosis', sans-serif;
     text-align: center;
-    color: rgb(79, 166, 241);
+    color: map-get($colores, "colorTitulos");
     margin: 40px;
 }
+
 body{
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(34,34,176,1) 35%, rgba(161,239,255,1) 100%);
+    background: map-get($colores, "colorFondo");
 }
+
 p{
-    color: aliceblue;
+    color: map-get($colores, "colorParrafo");
 }
+
 /* HEADER   */
 header{ 
     grid-area: header;
@@ -30,10 +34,10 @@ header{
         }
     }
 }
+
 main{ 
     @include flex(column, none, none);
     grid-area: main;
-
 }
 
 /* FOOTER */
@@ -61,7 +65,7 @@ footer{
 
         .imgFooter{
             display: flex;
-            margin: 15px ;
+            margin: 15px;
             justify-content: left;
         
             img{
